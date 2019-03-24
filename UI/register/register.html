@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BANKA</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1>Banka</h1>
+        </div>
+            <div class="topnav" id="myTopnav">
+                    <a href="/UI/homepage/index.html" class=" active left"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <!-- <a href="#" class="left "> About Us</a> -->
+                    <a href="#" class="right"><i class="fa fa-question fa-lg"></i> Help </a>
+                    <!-- <a href="#" class="right"> <i class="fa fa-sign-in fa-lg"></i> Sign Up</a> -->
+                    <a href="/UI/homepage/index.html" class="right"> <i class="fa fa-user fa-lg"></i> Logout</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                  <i class="fas fa-clock" style="font-size:36px;"></i>
+    </header>
+
+
+    <div class="wrapper" >
+        <div class="content">
+            <h1>You are opening a BANKA Bank instant account</h1>
+        </div>
+        <div>
+            
+            <label> Account type:</label>
+               
+            <label>Savings
+                <input type="checkbox" >
+            </label>
+
+            <label>Current
+                    <input type="checkbox" >
+                </label>
+                
+                <label>Joint
+                        <input type="checkbox" >
+                    </label>
+        </div>
+        
+        <form >
+                <div class="form">
+           
+                        <div class="top-form">
+                            <div class="inner-form">
+                                <div class="label"><span>*</span>Firstname</div>
+                                <input type="text" required placeholder="chika">
+                            </div>
+                
+                            <div class="inner-form">
+                                    <div class="label"><span>*</span>Middlename</div>
+                                    <input type="text" required placeholder="Anthony">
+                                </div>
+                            
+                                <div class="inner-form">
+                                        <div class="label"><span>*</span>Lastname</div>
+                                        <input type="text" required placeholder="ugwu">
+                                    </div>
+                        </div> 
+                
+                        <div>
+                            <label >
+                                    <span>*</span>Gender:
+                                <select>
+                                        <option>Select</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                            </label>
+        
+                            <label >
+                                    Maritial Status:
+                                    <select>
+                                            <option>Select</option>
+                                            <option>Single</option>
+                                            <option>Married</option>
+                                            <option>Divorced</option>
+                                        </select>
+                                </label>
+        
+                                <label>
+                                        <span>*</span>Date of birth:
+                                    <input type="date" required placeholder="04/04/2010">
+                                </label>
+                        </div>
+                        
+                        <div class="middle-form"> 
+                                <div class="inner-form">
+                                        <div class="label"><span>*</span>Residential Address</div>
+                                        <input type="text" placeholder="No 5 akoka road" required>
+                                    </div>
+                        </div>
+                         
+        
+        
+                        <div class="top-form">
+                
+                                <div class="column-2">
+                                        <div class="label"><span>*</span>Phone number</div>
+                                        <input type="tel" placeholder="08135863376" required pattern="[0-9]{11}">
+                                    </div>
+        
+                                    <div class="column-2">
+                                            <div class="label"><span>*</span>Email</div>
+                                            <input type="email" placeholder="example@gmail.com" required>
+                                        </div>
+                        </div>
+                         
+        
+                        <div class="top-form">
+                
+                                <div class="column-2">
+                                        <div class="label"><span>*</span>State of Residence</div>
+                                        <input type="text" placeholder="Lagos" required>
+                                    </div>
+        
+                                    <div class="column-2">
+                                            <div class="label">Branch</div>
+                                            <input type="text" placeholder="Akoka" required>
+                                        </div>
+                        </div>
+        
+        
+        
+                        <div class="bottom-form">
+                
+                                <div class="inner-form">
+                                        <div class="label">Account Number</div>
+                                        <input type="text" placeholder="Account number will be generated once you create account" >      
+                                </div>
+        
+                                <div class="inner-form">
+                                        <div class="label"><span class="pics">Upload image</span></div>
+                                        <input type="file" placeholder="" required>      
+                                </div>
+                        </div>
+                
+                        <div class="btn">
+                            <input type="submit" value="Create account" required>
+                        </div>
+                         
+                    </div>
+                      
+            </form>
+        
+        
+    </div>
+     
+    
+
+
+    
+      
+    <script src="register.js"></script>
+</body>
+</html>
