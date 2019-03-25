@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BANKA</title>
+    <link rel="stylesheet" href="cashier.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1>Banka</h1>
+        </div>
+            <div class="topnav" id="myTopnav">
+                    <a href="/UI/homepage/index.html" class=" active left"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <!-- <a href="#" class="left "> About Us</a> -->
+                    <a href="#" class="right"><i class="fa fa-question fa-lg"></i> Help </a>
+                    <!-- <a href="#" class="right"> <i class="fa fa-sign-in fa-lg"></i> Sign Up</a> -->
+                    <a href="/UI/homepage/index.html" class="right"> <i class="fa fa-user fa-lg"></i> Logout</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                  <i class="fas fa-clock" style="font-size:36px;"></i>
+    </header>
+
+
+
+
+    <div class="wrap-form">
+        <h2>Credit or debit custommers</h2>
+        <form action>
+            <div>
+                    <label >Account Number
+                            <input type="text" placeholder="Account Number" required>
+              
+                        </label>
+            </div>
+
+
+            <div>
+                    <label >Customers Name
+                            <input type="text" placeholder="Customers Name" required>
+              
+                        </label>
+            </div>
+
+
+            <div>
+                    <label >Currency
+                            <select>
+                                <option >select</option>
+                                <option >NGN</option>
+                                <option >USD</option>
+                                <option >EUR</option>
+                            </select>
+              
+                        </label>
+            </div>
+
+
+            <div>
+                <label>Amount
+                    <input type="number" placeholder="Amount" required>
+                </label>
+            </div>
+
+
+            <div>
+                <input type="submit" value="debit">
+                <input type="submit" value="credit">
+            </div>
+          
+        </form>
+    </div>
+
+
+
+      
+    <script src="cashier.js"></script>
+</body>
+</html>
