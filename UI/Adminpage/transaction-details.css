@@ -1,0 +1,115 @@
+section{
+    /* width:100%; */
+  max-width:80%;
+  margin: 5px 5px ; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-left: 300px;
+  overflow-x:auto;
+  
+}
+
+table{
+width:90%;
+margin-top: 40px;
+
+}
+th, td {
+    text-align: center;
+    padding: 4px;
+    font-size: 12px;
+  }
+
+
+table,tr{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+td a{
+    text-decoration: none;
+    
+}
+
+a.activate{
+    background: green;
+    color: white;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+a.activate:hover{
+    color: green;
+    background: white;
+}
+
+
+
+a.deactivate{
+    background: red;
+    color: white;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+a.deactivate:hover{
+    color: red;
+    background: white;
+}
+
+
+
+form{
+    margin-left: 50px;
+    width: 70%;
+    font-size: 18px;
+}
+
+input[type='text']{
+    width:70%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+
+input[type='submit']{
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-right:12px;
+    background: rgb(9, 14, 61);
+    cursor: pointer;
+    color: white;
+}
+
+
+input[type='submit']:hover{
+    background: rgb(230, 153, 10);
+
+}
+
+
+form input:focus{
+    border-color: #4ca1af;
+  }
+
+
+ td.debit{
+    color: red;
+  }
