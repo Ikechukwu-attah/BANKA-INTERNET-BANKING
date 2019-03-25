@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BANKA</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="activate-users.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<header>
+        <div class="branding">
+            <h1>Banka</h1>
+        </div>
+            <div class="topnav" id="myTopnav">
+                    <a href="/UI/homepage/index.html" class=" active left"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <!-- <a href="#" class="left "> About Us</a> -->
+                    <a href="#" class="right"><i class="fa fa-question fa-lg"></i> Help </a>
+                    <!-- <a href="#" class="right"> <i class="fa fa-sign-in fa-lg"></i> Sign Up</a> -->
+                    <a href="/UI/homepage/index.html" class="right"> <i class="fa fa-user fa-lg"></i> Logout</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                  <i class="fas fa-clock" style="font-size:36px;"></i>
+    </header>
+
+     <div class="container">
+            <h2>Welcome Admin</h2>
+            <div id="sidebar">
+                    
+                <div class="toggle-btn" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+               
+                <ul>
+                    <li><a href="customers-details.html">Customers details</a></li>
+                    <li><a href="Transaction-details.html">Transaction details</a></li>
+                    <li><a href="add-staff.html">Add Cashier</a></li>
+                    <li><a href="delete-users.html">Delate users account</a></li>
+                    <li><a href="activate-users.html">Activate or deactivate users account</a></li>
+                    
+                </ul>
+            </div>
+        
+        
+        
+     </div>
+   
+     <section>
+        <form >
+            <input type="text" placeholder="search user to activate or deactivate">
+            <input type="submit" placeholder="search user to activate or deactivate" value="Search">
+        </form>
+         <table>
+                        
+                <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Account Number</th>
+                        <th>Account Type</th>
+                        <th>Email</th>
+                        <th>Activate</th>
+                        <th>Deactivate</th>
+
+                    </tr>
+
+
+                <tr>
+                        <td>Anthony</td>
+                        <td>Ugwu</td>
+                        <td>834875843</td>
+                        <td>Current</td>
+                        <td>example@gmail.com</td>
+                        <td><a href="" class="activate">Activate</a</td>
+                        <td><a href="" class="deactivate">Deactivate</a</td>
+                        
+                </tr>
+
+
+
+
+                <tr>
+                        <td>Anthony</td>
+                        <td>Ugwu</td>
+                        <td>834875843</td>
+                        <td>Savings</td>
+                        <td>example@gmail.com</td>
+                        <td><a href="" class="activate">Activate</a</td>
+                        <td><a href="" class="deactivate">Deactivate</a</td>
+                        
+                </tr>
+
+
+
+
+              
+
+
+                <tr>
+                        <td>Anthony</td>
+                        <td>Ugwu</td>
+                        <td>834875843</td>
+                        <td>Savings</td>
+                        <td>example@gmail.com</td>
+                        <td><a href="" class="activate">Activate</a</td>
+                        <td><a href="" class="deactivate">Deactivate</a</td>
+                        
+                </tr>
+
+
+
+               
+            </table>
+    
+     </section>
+
+
+
+
+<script src="admin.js"></script>
+</body>
+</html>

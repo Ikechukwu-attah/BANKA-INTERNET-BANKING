@@ -1,0 +1,119 @@
+section{
+    /* width:100%; */
+  max-width:80%;
+  margin: 5px 5px ; 
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-left: 300px;
+  overflow-x:auto;
+  
+}
+
+
+
+form{
+    margin-left: 50px;
+    width: 70%;
+    font-size: 18px;
+}
+
+input[type='text'],input[type="email"]{
+    width:70%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-left:50px;
+}
+
+
+input[type='submit']{
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+    width: 100px;
+    background: rgb(9, 14, 61);
+    cursor: pointer;
+    color: white;
+    margin-top:15px;
+    
+  
+   
+}
+
+
+input[type='submit']:hover{
+    background: rgb(230, 153, 10);
+
+}
+
+
+input[type='submit'].cancel{
+    background:red;
+    margin-left:20px;
+
+}
+
+input[type='submit'].cancel:hover{
+    background:rgb(230, 153, 10);
+    outline:none;
+    
+}
+
+form input:focus{
+    border-color: #4ca1af;
+  }
+
+
+  .top-row input[type="text"]{
+      
+      margin-top: 15px;
+      
+  }
+
+
+  .middle-row input[type="email"]{
+      
+    margin-top: 15px;
+    
+}
+
+
+select{
+    width:70%;
+  padding: 8px 5px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left:50px;
+  }
+
+.staff{
+    
+    max-width: 60%;
+    margin-top:30px;
+    margin-left: 100px;
+    min-height: 100%
+    
+}
+
+
+
+h3{
+    text-align: center;
+}
+
+
+.bottom{
+    text-align: center;
+}
