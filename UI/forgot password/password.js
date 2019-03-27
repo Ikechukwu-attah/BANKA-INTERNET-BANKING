@@ -10,7 +10,7 @@ function myFunction() {
 
  let check =()=>{
   
-    alert('Email successfully sent, check your mail to rest your password')
+    alert('Email successfully sent, check your mail to reset your password')
     setTimeout(()=>{
       document.getElementById('show').value='';
     },1000)
