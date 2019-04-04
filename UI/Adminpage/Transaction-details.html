@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BANKA</title>
     <link rel="stylesheet" href="admin.css">
-    <link rel="stylesheet" href="transaction-details.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -54,38 +53,41 @@
      </div>
    
      <section>
-        <form >
-            <input type="text" placeholder="search user ">
-            <input type="submit" placeholder="" value="Search">
+        <form class="search-form" >
+            <input class="search-input" type="text" placeholder="search user ">
+            <input class="search-submit" type="submit" placeholder="" value="Search">
         </form>
          <table>
+                <thead>
+
+                    <tr>    <th>Date</th>
+                            <th>Time</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Account Number</th>
+                            <th>Account Type</th>
+                            <th>Source</th>
+                            <th>Refrence</th>
+                            <th>Debit Value</th>
+                            <th>Credit Value</th>
+                         
+    
+                        </tr>
+                </thead>
                         
-                <tr>    <th>Date</th>
-                        <th>Time</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Account Number</th>
-                        <th>Account Type</th>
-                        <th>Source</th>
-                        <th>Refrence</th>
-                        <th>Debit Value</th>
-                        <th>Credit Value</th>
-                     
-
-                    </tr>
 
 
-                <tr>
-                        <td>5/5/2019</td>
-                        <td>4:30pm</td>
-                        <td>Chima</td>
-                        <td>James</td>
-                        <td>00134578</td>
-                        <td>Savings</td>
-                        <td>Transfer</td>
-                        <td>Jenifer</td>
-                        <td></td>
-                        <td>100,000</td>
+                <tr class="transaction-row">
+                        <td class="transaction1">5/5/2019</td>
+                        <td class="transaction1">4:30pm</td>
+                        <td class="transaction1">Chima</td>
+                        <td class="transaction1">James</td>
+                        <td class="transaction1">00134578</td>
+                        <td class="transaction1">Savings</td>
+                        <td class="transaction1">Transfer</td>
+                        <td class="transaction1">Jenifer</td>
+                        <td class="transaction1">&nbsp; </td>
+                        <td class="transaction1">100,000</td>
                         
                 </tr>
 
@@ -94,18 +96,23 @@
 
 
             <tr>
-                    <td>5/5/2019</td>
-                    <td>4:30pm</td>
-                    <td>Chima</td>
-                    <td>James</td>
-                    <td>00134578</td>
-                    <td>Savings</td>
-                    <td>Withdraw</td>
-                    <td>chineye</td>
-                    <td class="debit">-100,000</td>
-                    <td></td>
+                    <td class="transaction1">5/5/2019</td>
+                    <td class="transaction1">4:30pm</td>
+                    <td class="transaction1">Chima</td>
+                    <td class="transaction1">James</td>
+                    <td class="transaction1">00134578</td>
+                    <td class="transaction1">Savings</td>
+                    <td class="transaction1">Withdraw</td>
+                    <td class="transaction1">chineye</td>
+                    <td class="debit transaction1">-100,000</td>
+                    <td class="transaction1">&nbsp; </td>
                     
             </tr>
+
+
+            
+          
+
 
 
 
@@ -118,7 +125,10 @@
      </section>
 
 
-
+     <footer>
+        <p class="footer-link"> Copy &copy 2019. All Rights Reserved BANKA <span> | <a href="">Privacy policy</a> |<a href="">Terms of use</a> </span></p>
+    </footer>
+        
 
 <script src="admin.js"></script>
 </body>
