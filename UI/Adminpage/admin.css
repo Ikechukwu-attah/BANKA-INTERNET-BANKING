@@ -1,9 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./img/dinner.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      margin: 0; 
+  
   }
   
  header {
@@ -150,8 +155,418 @@ li a:hover{
 }
 
 
+/* table section styling start */
+section{
+  /* width:100%; */
+max-width:80%;
+margin: 5px 5px ; 
+padding: 20px;
+box-sizing: border-box;
+margin-top: 40px;
+margin-left: 300px;
 
-@media screen and (max-width: 600px) {
+overflow-x: hidden; overflow-y: auto;
+
+}
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 80px; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+  
+  
+      
+  
+  
+  a.activate{
+      background: green;
+      color: white;
+      border: 1px solid #ddd;
+      outline: none;
+      padding: 3px;
+      border-radius: 5px;
+  }
+  
+  
+  a.activate:hover{
+      color: green;
+      background: white;
+  }
+  
+  
+  
+  a.deactivate{
+      background: red;
+      color: white;
+      border: 1px solid #ddd;
+      outline: none;
+      padding: 3px;
+      border-radius: 5px;
+  }
+  
+  
+  /* a.deactivate:hover{
+      color: red;
+      background: white;
+  } */
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-input{
+    width: 100% !important;
+  }
+
+  .search-submit{
+    width: 100% !important;
+ }
+ 
+  
+  form{
+      margin-left: 150px;
+      width: 70%;
+      font-size: 18px;
+      overflow-x: hidden; overflow-y: auto;
+  }
+  
+  input[type='text'],input[type='tel'],input[type='email']{
+      width:100%;
+      /* padding: 8px 5px; */
+      box-sizing: border-box;
+      border: 1px solid #000000;
+      border-radius: 2px;
+      outline: none;
+      transition: all 0.2s ease;
+      margin-top: 12px;
+      padding: 12px 12px 12px 40px;
+      -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   
+  }
+  
+  
+  input[type='submit']{
+    font-weight: bold;
+    width: 100%;
+    background: rgb(9, 14, 61);
+    margin: 3em 0 1.5em;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 12px 12px 12px 12px;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* margin-left: 200px; */
+    box-sizing: border-box;
+    margin-top: 12px;
+    float:right;
+    overflow: hidden;
+    /* margin-right: 180px; */
+    border:none;
+   
+
+  }
+  
+  
+  input[type='submit']:hover{
+      background: rgb(230, 153, 10);
+  
+  }
+  
+  
+  form input:focus{
+      border-color: #4ca1af;
+    }
+  
+  
+   td.debit{
+      color: red;
+    }
+
+
+
+
+
+
+    select{
+      width:100%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left:0px;
+    }
+  
+  .staff{
+      
+      max-width: 60%;
+      margin-top:30px;
+      margin-left: 100px;
+      min-height: 100%
+      
+  }
+  
+  
+  
+  h3{
+      text-align: center;
+  }
+  
+  
+  .bottom{
+      text-align: center;
+  }
+
+
+h4{
+  margin-left: 400px;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.credit-debit{
+  margin-left: 300px;
+  overflow-x: hidden; overflow-y: auto;
+}
+
+
+
+
+
+/* table section styling ends here */
+
+/* footer style */
+footer p{
+  text-align:center;
+  font-size: 15px;
+  padding-top: 15px;
+ margin-bottom: 0;
+  color:white;
+  
+ 
+ 
+}
+
+.footer-link{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:30px;
+  background: rgb(9, 14, 61);
+ 
+}
+
+
+p.text{
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
+p a{
+  color: #fff;
+  text-decoration: none;
+}
+ 
+p a:hover{
+  color:  rgb(230, 153, 10);
+}
+
+
+/* footer style ends here */
+
+/* styling create, add,... submite button. starts here */
+
+input[type='submit']#center{
+  
+    font-weight: bold;
+    width: 100%;
+    background: rgb(9, 14, 61);
+    /* margin: 1em 0 1.5em; */
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 14px 0px;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* margin-left: 200px; */
+    float: left;
+    margin-top: 30px;
+}
+
+input[type='submit']#center:hover{
+  background: rgb(230, 153, 10);
+
+}
+
+
+input[type='submit']#join{
+  font-weight: bold;
+    width: 100%;
+    background: rgb(9, 14, 61);
+    /* margin: 1em 0 1.5em; */
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 14px 0px;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* margin-left: 200px; */
+    float: left;
+    margin-top: 30px;
+}
+
+input[type='submit']#join:hover{
+  background: rgb(230, 153, 10);
+
+}
+
+input[type='submit']#credit1{
+  font-weight: bold;
+    width: 100%;
+    background: rgb(9, 14, 61);
+    /* margin: 1em 0 1.5em; */
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 14px 0px;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* margin-left: 200px; */
+    float: left;
+    margin-top: 30px;
+}
+
+input[type='submit']#credit1:hover{
+  background: rgb(230, 153, 10);
+
+}
+
+
+input[type='submit']#debit1{
+  font-weight: bold;
+    width: 100%;
+    background: rgb(9, 14, 61);
+    /* margin: 1em 0 1.5em; */
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 14px 0px;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* margin-left: 200px; */
+    float: left;
+    margin-top: 30px;
+}
+
+input[type='submit']#debit1:hover{
+  background: rgb(230, 153, 10);
+
+}
+
+
+ /* styling create, add,... submite button. ends here */
+
+/* user card styling starts here */
+
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  max-width:80%;
+  
+}
+
+
+h3.card-head{
+  background:   #151719;
+  max-width:100%;
+  padding: 20px;
+  color: #fff
+}
+
+.card p{
+  margin-top:20px;
+  font-size: 28px;
+  color: #000000;
+  font-weight: bold;
+}
+
+div#acctb{
+  margin-bottom: 50px;
+  color:white;
+
+}
+
+/* user card ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 600px){
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -179,4 +594,168 @@ li a:hover{
       display: block;
       text-align: left;
     }
+
   }
+
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+    }
+    
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+    }
+    .transaction1:nth-of-type(1):before { content: "Date"; }
+    .transaction1:nth-of-type(2):before { content: "Time"; }
+    .transaction1:nth-of-type(3):before { content: "FirstName"; }
+    .transaction1:nth-of-type(4):before { content: "LastName"; }
+    .transaction1:nth-of-type(5):before { content: "Account Number"; }
+    .transaction1:nth-of-type(6):before { content: "Account Type"; }
+    .transaction1:nth-of-type(7):before { content: "Source"; }
+    .transaction1:nth-of-type(8):before { content: "Reference"; }
+    .transaction1:nth-of-type(9):before { content: "Debit Value"; }
+    .transaction1:nth-of-type(10):before { content: "Credit Value"; }
+    
+  }
+   
+
+
+
+
+
+  
+  @media screen and (max-width: 600px) {
+   body{
+      max-width: 100vh;
+      max-height: 100vh;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      margin: 0; 
+     
+  }
+ 
+
+
+  }
+
+      @media screen and (max-width: 600px) {
+
+        #sidebar.active{
+          left: 0px;
+      }
+
+      
+      #sidebar{
+      position:fixed;
+      width: 200px;
+      height:100%;
+      background:  #151719;
+      left: -200px;
+      transition: all 500ms linear;
+}
+
+
+      }
+
+    
+
+
+
+    /* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* footer{
+    position: relative;
+  } */
+}
+
+
+@media screen and (max-width: 600px){
+  section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 50px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    /* margin-left: 300px; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+form {
+  margin-left: 0px;
+  width: 100%;
+}
+
+
+input[type='text'], input[type='tel'], input[type='email'] {
+  width: 100%;
+}
+
+input[type='submit'] {
+  width: 100%;
+  margin-right: 0px;
+}
+
+select {
+  width: 100%;
+  
+  
+}
+option{
+  width:20%
+}
+
+h4{
+  margin-left:0px;
+}
+
+.credit-debit {
+  margin-left: 0px;
+  
+}
+
+}
+    
+@media screen and (max-width: 600px){
+  input[type='submit']#center,input[type='submit']#join,input[type='submit']#credit1,input[type='submit']#debit1{
+    width:100%;
+    margin-left:0px;
+  }
+}
+

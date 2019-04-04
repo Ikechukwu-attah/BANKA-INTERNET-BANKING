@@ -29,7 +29,7 @@
     </header>
 
      <div class="container">
-            <h2>Welcome Admin</h2>
+            <h2>Welcome John</h2>
             <div id="sidebar">
                     
                 <div class="toggle-btn" onclick="toggleSidebar()">
@@ -39,11 +39,10 @@
                 </div>
                
                 <ul>
-                    <li><a href="customers-details.html">Customers details</a></li>
-                    <li><a href="Transaction-details.html">Transaction details</a></li>
-                    <li><a href="add-staff.html">Add Cashier</a></li>
-                    <li><a href="delete-users.html">Delate users account</a></li>
-                    <li><a href="activate-users.html">Activate or deactivate users account</a></li>
+                    <li><a href="user.html">Dashboard</a></li>
+                    <li><a href="createaccount.html">Create bank account</a></li>
+                    <li><a href="transaction-history.html">Transaction history</a></li>
+                    <li><a href="userprofile.html">Profile</a></li>
                     
                 </ul>
             </div>
@@ -53,78 +52,75 @@
      </div>
    
      <section>
-        <form  class="search-form">
-            <input class="search-input" type="text" placeholder="search user to activate or deactivate">
-            <input class="search-submit" type="submit" placeholder="search user to activate or deactivate" value="Search">
+        <form >
+            <input type="text" placeholder="search user ">
+            <input type="submit" placeholder="" value="Search">
         </form>
          <table>
                         
-                <tr>
+                <tr>    <th>Date</th>
+                        <th>Time</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Account Number</th>
                         <th>Account Type</th>
-                        <th>Email</th>
-                        <th>Activate</th>
-                        <th>Deactivate</th>
+                        <th>Source</th>
+                        <th>Refrence</th>
+                        <th>Debit Value</th>
+                        <th>Credit Value</th>
+                     
 
                     </tr>
 
 
-                <tr>
-                        <td>Anthony</td>
-                        <td>Ugwu</td>
-                        <td>834875843</td>
-                        <td>Current</td>
-                        <td>example@gmail.com</td>
-                        <td><a href="" class="activate">Activate</a</td>
-                        <td><a href="" class="deactivate">Deactivate</a</td>
-                        
-                </tr>
-
-
-
-
-                <tr>
-                        <td>Anthony</td>
-                        <td>Ugwu</td>
-                        <td>834875843</td>
+                <tr class="transaction">
+                        <td>5/5/2019</td>
+                        <td>4:30pm</td>
+                        <td>Chima</td>
+                        <td>James</td>
+                        <td>00134578</td>
                         <td>Savings</td>
-                        <td>example@gmail.com</td>
-                        <td><a href="" class="activate">Activate</a</td>
-                        <td><a href="" class="deactivate">Deactivate</a</td>
+                        <td>Transfer</td>
+                        <td>Jenifer</td>
+                        <td></td>
+                        <td>100,000</td>
                         
                 </tr>
 
 
 
 
-              
+
+            <tr class="transaction">
+                    <td>5/5/2019</td>
+                    <td>4:30pm</td>
+                    <td>Chima</td>
+                    <td>James</td>
+                    <td>00134578</td>
+                    <td>Savings</td>
+                    <td>Withdraw</td>
+                    <td>chineye</td>
+                    <td class="debit">-100,000</td>
+                    <td></td>
+                    
+            </tr>
 
 
-                <tr>
-                        <td>Anthony</td>
-                        <td>Ugwu</td>
-                        <td>834875843</td>
-                        <td>Savings</td>
-                        <td>example@gmail.com</td>
-                        <td><a href="" class="activate">Activate</a</td>
-                        <td><a href="" class="deactivate">Deactivate</a</td>
-                        
-                </tr>
 
+               
 
 
                
             </table>
     
+          
      </section>
+
 
 
      <footer>
         <p class="footer-link"> Copy &copy 2019. All Rights Reserved BANKA <span> | <a href="">Privacy policy</a> |<a href="">Terms of use</a> </span></p>
     </footer>
-
 <script src="admin.js"></script>
 </body>
 </html>

@@ -39,11 +39,9 @@
                 </div>
                
                 <ul>
-                        <li><a href="customers-details.html">Customers details</a></li>
-                        <li><a href="Transaction-details.html">Transaction details</a></li>
-                        <li><a href="add-staff.html">Add Cashier</a></li>
-                        <li><a href="delete-users.html">Delate users account</a></li>
-                        <li><a href="activate-users.html">Activate or deactivate users account</a></li>
+                    <li><a href="staff.html">Dasboard</a></li>
+                    <li><a href="credituser.html">Credit User</a></li>
+                    <li><a href="debituser.html">Debit User</a></li>
                    
                     
                 </ul>
@@ -51,19 +49,18 @@
      </div>
     
      <section>
-         <h4 class='credit-debit'>Add Staff/Cashier?Admin</h4>
+         <h4 class='credit-debit'>Credit User</h4>
         <form action="">
-            <input type="text" placeholder="FirstName"  required >
-            <input type="text" placeholder="LastName" required >
-            <input type="email" placeholder="example@gmail.com"  required >
+            <input type="tel" placeholder="Account Number" pattern="[0-9]{11}" required >
+            <input type="text" placeholder="Customers Name" required >
             <select>
-                    <option >Role</option>
-                    <option >Admin</option>
-                    <option >Staff</option>
-                    <option >Cashier</option>
+                    <option >select currency</option>
+                    <option >NGN</option>
+                    <option >USD</option>
+                    <option >EUR</option>
                 </select>
-          
-             <input type="submit" value="ADD" id="join">
+            <input type="tel" placeholder="Amount" pattern="[0-20]{22}" required >
+             <input type="submit" value="CREDIT" id="credit1">
            
          
         </form>
