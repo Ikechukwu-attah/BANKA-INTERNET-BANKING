@@ -29,7 +29,7 @@
     </header>
 
      <div class="container">
-            <h2>Welcome Staff</h2>
+            <h2>Welcome John</h2>
             <div id="sidebar">
                     
                 <div class="toggle-btn" onclick="toggleSidebar()">
@@ -39,44 +39,54 @@
                 </div>
                
                 <ul>
-                        <li><a href="customers-details.html">Customers details</a></li>
-                        <li><a href="Transaction-details.html">Transaction details</a></li>
-                        <li><a href="add-staff.html">Add Cashier</a></li>
-                        <li><a href="delete-users.html">Delate users account</a></li>
-                        <li><a href="activate-users.html">Activate or deactivate users account</a></li>
-                   
+                    <li><a href="user.html">Dashboard</a></li>
+                    <li><a href="createaccount.html">Create bank account</a></li>
+                    <li><a href="transaction-history.html">Transaction history</a></li>
+                    <li><a href="userprofile.html">Profile</a></li>
                     
                 </ul>
             </div>
+        
+        
+        
      </div>
-    
-     <section>
-         <h4 class='credit-debit'>Add Staff/Cashier?Admin</h4>
-        <form action="">
-            <input type="text" placeholder="FirstName"  required >
-            <input type="text" placeholder="LastName" required >
-            <input type="email" placeholder="example@gmail.com"  required >
-            <select>
-                    <option >Role</option>
-                    <option >Admin</option>
-                    <option >Staff</option>
-                    <option >Cashier</option>
-                </select>
-          
-             <input type="submit" value="ADD" id="join">
-           
-         
-        </form>
-     </section>
    
+     <section>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h3 class="card-head">Total Debit</h3>
+              <p>N</p>
+              <p>50 0000</p>
+            </div>
+          </div>
+
+            <div class="column">
+              <div class="card">
+                <h3 class="card-head">Total Credit</h3>
+                <p>N</p>
+                <p>50 0000</p>
+              </div>
+            </div>
+            
+            <div class="column" id="acctb">
+              <div class="card">
+                <h3 class="card-head" >Account Balance</h3>
+                <p>N</p>
+                <p>100 000</p>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+     </section>
+
+
 
      <footer>
         <p class="footer-link"> Copy &copy 2019. All Rights Reserved BANKA <span> | <a href="">Privacy policy</a> |<a href="">Terms of use</a> </span></p>
     </footer>
-        
-
-    
-
 <script src="admin.js"></script>
 </body>
 </html>

@@ -1,51 +1,16 @@
-body html{
-  height:100%
-}
-
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;   
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       padding: 0;
-       
+      margin: 0; 
    
     
   }
-
-  .bg{
-    background-image: url(./img/banking.jpg) ;
-    height:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-
-  }
-
-
-
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    opacity: 0.9;
-    padding: 28px;
-    font-size: 30px;
-    letter-spacing: 10px;
-  }
-  
 
 
   
@@ -150,7 +115,12 @@ h1{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  margin-bottom: 40px;
 
+}
+
+#wrap2{
+    margin-top: 5px;
 }
 
 h2{
@@ -166,11 +136,135 @@ h2{
 
 }
 
-footer{
+hr{
+  margin-bottom: 50px;
+}
+
+input[type=text],input[type=password],input[type=email],input[type=tel]{
+   outline: none;
+   font-size:14px;
+   letter-spacing: 1px;
+   color: black;
+   width: 100%;
+   margin-bottom: 12px;
+   -webkit-appearance: none;
+   border: 1px solid black; 
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   padding: 12px 12px 12px 40px;
+   border-radius: 2px;
+}
+
+input[type=submit]{
+  font-weight: bold;
+  width: 100%;
+  background: rgb(9, 14, 61);
+  margin: 3em 0 1.5em;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 14px 0px;
+  color:white;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+
+
+input[type=submit]:hover{
+  background: rgb(230, 153, 10);
+}
+
+/* forgot password form start */
+
+
+
+.wrap3{
+    max-width:700px;
+    /* border-radius:20px; */
+    margin: auto;
+    /* box-sizing: border-box; */
+    /* border: 1px solid black; */
+    padding: 40px;
+    margin-top: 35px;
+    
+     
+  }
+
+
+
+
+
+input[type=email].edit{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    
+    outline: none;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+
+input[type=submit]#reduce{
+   /* float: right; */
+   /* height: 40px;
+    font-size: 20px;
+    border-radius:8px;
+    outline: none;
+    border: 1px solid black;
+    text-align: center;
+    background: rgb(9, 14, 61);
+    
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase; */
+    font-weight: bold;
+  width: 20%;
+  background: rgb(9, 14, 61);
+  margin: 3em 0 1.5em;
+  margin-left:250px;
+  
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 14px 0px;
+  color:white;
+  text-transform: uppercase;
+  cursor: pointer;
+   
+   
+}
+
+
+input[type=submit]#reduce:hover{
+ background:   rgb(230, 153, 10);
+}
+/* forgot password form end */
+
+
+a{
+  color: yellowgreen;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+}
+
+label{
+font-size: 13px;
+}
+
+footer {
   position: fixed;
   bottom: 0;
+  margin-top: 50px;
   width: 100%;
 }
+
+
 
 footer p{
   text-align:center;
@@ -179,21 +273,13 @@ footer p{
  margin-bottom: 0;
   color:white;
   
+  
  
  
-}
-
-
-.home{
-  text-align: center;
-  margin-top: 30px;
-  color: #fff;
-  font-size: 25px;
 }
 
 .footer-link{
   
-  bottom: 0;
   left: 0;
   right: 0;
   height:30px;
@@ -202,7 +288,7 @@ footer p{
 }
 
 p{
-  margin-top: 200px;
+  margin-top: 20px;
 }
 
 
@@ -210,7 +296,6 @@ p{
 
 p a{
   color: #fff;
-  text-decoration: none;
 }
  
 p a:hover{
@@ -219,12 +304,26 @@ p a:hover{
 
 p .signup{
   color: yellowgreen;
+  
 }
 
 p.text{
   font-size: 12px;
   text-align: center;
+  
 }
+
+
+form a:hover {
+color:  rgb(230, 153, 10);
+}
+
+
+
+
+
+
+
 
 
 
@@ -250,33 +349,4 @@ p.text{
       display: block;
       text-align: left;
     }
-  }
-
-
-  @media screen and (max-width: 600px) {
-    body{
-      max-width: 100vh;
-      max-height: 100vh;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0;
-      margin: 0; 
-     
-  }
- 
-
- .bg{
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  
- }
-  
-
- .caption span.border{
-  letter-spacing: 0px;
- }
   }

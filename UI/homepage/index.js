@@ -8,7 +8,15 @@ function myFunction() {
   }
 
 
-
+  let check =()=>{
+  
+    alert('Email successfully sent, check your mail to reset your password')
+    setTimeout(()=>{
+      document.getElementById('show').value='';
+    },1000)
+    
+ 
+ }
   
 
   let content = ['Welcome, Lets Bank', 'Bank Anywhere', 'Make Every Moment Count'];
